@@ -1,0 +1,8 @@
+---
+Title: Learning to rebase
+Author: Hanchen Wang
+date: "'r Sys.Date()'"
+output:
+  bookdown::html_document2
+keep_md: true
+---
