@@ -6,3 +6,15 @@ output:
   bookdown::html_document2
 keep_md: true
 ---
+
+```{r}
+# Libraries
+library(tidyverse)
+library(COVID19)
+# Examining situation in USA
+covid_us <- covid19("USA", level = 2)
+ggplot(covid_us, aes(x = date , y = confirmed)) +
+geom_line() +
+facet_wrap(~id)
+```
+
